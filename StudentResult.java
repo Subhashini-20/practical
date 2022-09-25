@@ -12,13 +12,13 @@ public static void main(String args[])
     System.out.println("Enter marks of five subjects:");
     System.out.print("Enter marks of English subjects:");
     eng=sc.nextInt();
-    System.out.print("Enter marks of physics subjects:");
-    chem=sc.nextInt();
     System.out.print("Enter marks of chemistry subjects:");
+    chem=sc.nextInt();
+    System.out.print("Enter marks of chemistry  subjects:");
     phy=sc.nextInt();
     System.out.print("Enter marks of maths subjects:");
     math=sc.nextInt();
-    System.out.print("Enter marks of computers subjects:");
+    System.out.print("Enter marks of biology subjects:");
     bio=sc.nextInt();
 
     // Calculate total, average and percentage //
