@@ -6,7 +6,7 @@ create table bankmaster2(acno int,cname varchar(30) not null,city varchar(40) de
 
 desc bankmaster2
 
-insert into bankmaster2 values(10,'siva','chennai',15000,101),(11,'hari','madurai',16000,102),(12,'sai','villupuram',17000,103),(13,'vijay','guindy',18000,104),(14,'shakil','paris',19000,101)
+insert into bankmaster2 values(10,'subha','chennai',15000,101),(11,'yakash','madurai',16000,102),(12,'Amr','villupuram',17000,103),(13,'priya','guindy',18000,104),(14,'kaviya','paris',19000,101)
  
 select * from bankmaster2
 
