@@ -1,42 +1,45 @@
-//using throws ,throw keyword
-import java.util.Scanner;
-class InValidLoginException extends Exception//custom exception
+//airline ticketing
+package airline1;//package and package name
+
+import java.lang.*;//import the needed packages
+import java.util.Scanner.*;
+import java.util.*;
+class InvalidUserException extends Exception//create user defined exception
 {
-	public InValidLoginException(String s)//parameter constructor
+	public void InvalidUserException()//non param constructor
 	{
-		super(s);
 	}
 }
-class Login
-{	
-	static String uname;
-	 static int pwd;
-	void input()
-	{
-		Scanner sc=new Scanner(System.in);//get the input
-		System.out.println("enter user name:");
-	   uname=sc.next();
-	  System.out.println("enter password:");
-	   pwd=sc.nextInt();
-	}
-	
-	 static void output(String x,int y)throws InValidLoginException//throws invlid login excepton
-	{
-		 
-	  	if(x!="anudip"&& y!=2576)
-			throw new InValidLoginException("invalid login");//throw invalid login
-			else
-						System.out.println("valid login");//valid login
 
-       
-	}
-	
-    public static void main(String[] args)throws InValidLoginException
+public class Login
+{
+	 public void validate()throws InvalidUserException
 	{
-       Login l=new Login();//object cretaion
-	  l.input();
-	  output(uname,pwd);
-       
+		Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter id:");
+	    int id=sc.nextInt();//input from the keyboard
+	     System.out.println("Enter password:");
+	      String password=sc.next();
+		
+			
+		if(id!=18 && password!="subha")//check the condion
+			throw new InvalidUserException();//throw invaliduserException
+		
+		else
+			System.out.println("Enter to Book Flight");//enter to book flight
+		
+		
+		
+		
 	}
+public static void main(String[] args)throws InvalidUserException
+{
 	
+	Login l=new Login();//object creation
+	
+    l.validate();//method calling
+	
+	
+	
+}
 }
